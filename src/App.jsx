@@ -1,9 +1,10 @@
 import './App.css'
-
+import image from './assets/profile-pic.png'
 
     function App() {
       return (
         <div className="App">
+          {/* cabeçalho */}
           <header>
             <h1>Jônatas Ferreira</h1>
             <nav>
@@ -13,15 +14,20 @@ import './App.css'
               <li className="navbar">Contatos</li>
             </nav>
           </header>
+
           <main className="main">
-            <div className="sobre">
-              <h2>Olá, Sou o Jônatas I. Ferreira</h2>
+            {/* sobre */}
+            <div className="sobreT">
+              <div className='sobre'>
+              <h2>Olá, Sou o <span>Jônatas I. Ferreira</span></h2>
               <p>Sou programador frontend apaixonado por tecnologia</p>
               <button>Sobre mim</button>
               <button>Projetos</button>
-               <div>
+              </div>
+             
+               <div className='imagem'>
                 <div className="elipse"></div>
-                <img src="" alt="" />
+                <img src={image} alt="" className='imagem' />
                 </div>
             </div>
             <div className="sobremim">
@@ -29,39 +35,61 @@ import './App.css'
               <p>Meu nome é Jonatas e sou um programador frontend apaixonado por tecnologia. Com mais de 1 ano de experiência em desenvolvimento web, eu possuo um amplo conhecimento em HTML, CSS e JavaScript, além de frameworks e bibliotecas populares como React.</p>
               <p>1+ Anos de experiência em tecnologias Frontend</p>
             </div>
-    
+    {/* minhas tecnologias */}
             <div className="tecnologias">
+
               <div className="tecs">
                 <i></i>
                 <h3>html</h3>
                 <p>HTML é a linguagem de marcação usada para criar páginas web.</p>
+              </div>
 
-              </div>
               <div className="tecs">
               <i></i>
                 <h3>html</h3>
                 <p>HTML é a linguagem de marcação usada para criar páginas web.</p>
               </div>
+
               <div className="tecs">
               <i></i>
                 <h3>html</h3>
                 <p>HTML é a linguagem de marcação usada para criar páginas web.</p>
               </div>
+
               <div className="tecs">
               <i></i>
                 <h3>html</h3>
                 <p>HTML é a linguagem de marcação usada para criar páginas web.</p>
               </div>
+
               <div className="tecs">
               <i></i>
                 <h3>html</h3>
                 <p>HTML é a linguagem de marcação usada para criar páginas web.</p>
               </div>
+
               <div className="tecs">
               <i></i>
                 <h3>html</h3>
                 <p>HTML é a linguagem de marcação usada para criar páginas web.</p>
               </div>
+
+            </div>
+            <div className='projetos'>
+            <h3>Projetos</h3>
+            <p>Esses são alguns dos meus projetos</p>
+            <div className="projetos">
+              <h3>Maratona discovery</h3>
+            </div>
+            <div className="projetos">
+              <h3>CEP</h3>
+            </div>
+            <div className="projetos">
+              <h3>RocketShoes</h3>
+            </div>
+            <div className="projetos">
+                <h3>RocketPay</h3>
+            </div>
             </div>
           </main>
         </div>
