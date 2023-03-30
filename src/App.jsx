@@ -1,5 +1,8 @@
 import './App.css'
 import image from './assets/profile-pic.png'
+import { AiOutlineEye} from "react-icons/ai";
+import { AiOutlineUser} from "react-icons/ai";
+
 
     function App() {
       return (
@@ -21,8 +24,10 @@ import image from './assets/profile-pic.png'
               <div className='sobre'>
               <h2>Olá, Sou o <span>Jônatas I. Ferreira</span></h2>
               <p>Sou programador frontend apaixonado por tecnologia</p>
-              <button>Sobre mim</button>
-              <button>Projetos</button>
+              <div className='buttons'>
+              <button>Sobre mim <AiOutlineUser/></button>
+              <button>Projetos <AiOutlineEye/></button>
+              </div>
               </div>
              
                <div className='imagem'>

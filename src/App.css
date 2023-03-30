@@ -57,6 +57,32 @@ nav li:hover{
 .sobre span{
   font-size: 25px;
 }
+.buttons{
+  display: flex;
+}
+.buttons button{
+  background: #1A1A29;
+border-radius: 8px;
+border-width: 1.7px;
+  margin-right: 1rem;
+  border-style: ridge;
+ border-color: #7562E0;
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 1px 24px;
+
+color:#FFFFFF;
+}
+.buttons button:hover{
+  background-color: #7562E0;
+  cursor: pointer;
+}
+.buttons svg{
+  padding-left: 7px;
+  width: 1.3rem;
+  height: 1.2rem;
+}
 .sobreT{
   background-color: #1A1A29;
   display: flex;
