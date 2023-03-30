@@ -31,8 +31,8 @@ import { AiOutlineUser} from "react-icons/ai";
               </div>
              
                <div className='imagem'>
-                <div className="elipse"></div>
-                <img src={image} alt="" className='imagem' />
+                <span className="elipse"> <img src={image} alt="" className='imagem' /> </span>
+                
                 </div>
             </div>
             <div className="sobremim">
